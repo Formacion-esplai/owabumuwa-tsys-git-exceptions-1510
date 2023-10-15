@@ -73,7 +73,7 @@ public class Password {
 		}
 		if(countUpperCase>2 && countLowerCase>2 &&  countNumbers>2 ) {
 			isItStrong = true;
-			System.out.println("Es una contraseña muyy fuertee!");
+			//System.out.println("Es una contraseña muyy fuertee!");
 			
 		}
 		return isItStrong;

@@ -21,10 +21,7 @@ public class PasswordApp {
 		        Password[] password = new Password[cantidad];
 		        boolean[] isItStrong = new boolean[cantidad];
 		        
-		        String isItStrongMessage = "Es debil!!";;
-		        //String positiveisItStrong = "Es fuerte!!";
-		        //String negativeisItStrong = "Es debil!!";
-		        
+		        String isItStrongMessage = "Es debil!!";
 		        for(int i = 0; i<cantidad; i++) {
 		        	password[i] = new Password(longitud);
 		        	isItStrong[i] = password[i].esFuerte(); 
@@ -32,27 +29,11 @@ public class PasswordApp {
 		        		isItStrongMessage = "Es fuerte!!";
 		        	}
 		        	
-		        	System.out.println("Contraseña " + (i + 1) + ": " + password[i].getPassword() + " " + "Tu contraseña " + isItStrongMessage);
-		        	
-		        
-		        	
+		        	System.out.println("Contraseña " + (i + 1) + ": " + password[i].getPassword() + " " + "Tu contraseña " + isItStrongMessage);	        	
 		        }
-		        
-		       /* for (int i = 0; i < cantidad; i++) {
-		            password[i] = new Password(longitud);
-		           isIsStrong[i] = contraseñas[i].esFuerte();
-		        }
-
-		        for (int i = 0; i < cantidad; i++) {
-		            System.out.println("Contraseña " + (i + 1) + ": " + contraseñas[i].getPassword());
-		        }*/
 		 }
 		 catch (InputMismatchException e) {
 	            System.out.println("Por favor, escribir un numero valido");
-	        }
-		
-		
+	        }	
 	    }
-	
-
 }
